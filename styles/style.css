@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+ 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar img {
+    height: 100px;
+    margin-right: 20px; /* Ajustar o espaço entre o logo e os links */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-family: "Kanit", sans-serif;
+}
+
+.texto-header{
+    margin-left: 590px;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh; /* Altura total da viewport */
+    display: block;
+    background-size: cover;
+    background-position: center; /* Centraliza a imagem */
+    overflow-x: hidden;
+}
+
+/* Estilos específicos para a versão desktop (largura a partir de 767px) */
+@media only screen and (min-width: 767px) {
+    .mobile-banner {
+        display: none;
+    }
+}
+
+/* Estilos específicos para a versão móvel (largura menor que 767px) */
+@media only screen and (max-width: 766px) {
+    .desktop-banner {
+        display: none;
+        overflow-x: hidden;
+    }
+}
+
+.camisa{
+    background-color: rgb(43, 42, 42);
+    height: 400px;
+    width: 400px;
+    border-radius: 15px;
+}
+
+.produto{
+    margin-left: 720px;
+    margin-top: 50px;
+}
