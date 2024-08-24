@@ -13,15 +13,31 @@
     <header class="navbar">
         <img src="img/kactuz.png" alt="Logo Kactuz" />
         <div class="texto-header">
-        <a href="index.html">Home</a>
-        <a href="#products">???</a>
-        <a href="#about">???</a>
-        <a href="#contact">???</a>
+            <a href="index.html">Home</a>
+            <a href="#contact">Contato</a>
         </div>
+        <!-- Botão para abrir o menu no mobile -->
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     </header>
+
+    <!-- Menu Mobile -->
+    <nav class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
     <!-- Banner Desktop -->
     <img class="banner desktop-banner" src="img/bannerkactuz.png" alt="Banner Desktop">
     <!-- Banner Mobile -->
     <img class="banner mobile-banner" src="img/bannerkactuz_mobile.png" alt="Banner Mobile">
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.mobile-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
