@@ -56,7 +56,7 @@ body {
     cursor: pointer;
 }
 
-@media only screen and (min-width: 1179px) {
+@media only screen and (min-width: 1812px) {
     .mobile-banner {
         display: block;
         position: fixed;
@@ -88,7 +88,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 1179px) {
+@media only screen and (max-width: 1812px) {
     .desktop-banner {
         display: none;
         overflow-x: hidden;
